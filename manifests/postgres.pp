@@ -1,5 +1,5 @@
 class ruby::postgres {
-  include ruby
+  require ruby
   package{'ruby-postgres':
     ensure => installed,
   }

@@ -1,7 +1,6 @@
 class ruby::mysql {
-  include ruby
+  require ruby
   package{'ruby-mysql':
     ensure => present,
-    require => Package['ruby'],
   }
 }

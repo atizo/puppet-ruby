@@ -1,7 +1,6 @@
 class ruby::devel {
-  include ruby
+  require ruby
   package{'ruby-devel': 
     ensure => installed, 
-    require => Package['ruby'],
   }
 }
